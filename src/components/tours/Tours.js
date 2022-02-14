@@ -1,21 +1,30 @@
-//const data = require("./data/db.json");
-//import data from "./data/db.json";
+// const data = require("./data/db.json");
+// //import data from "./data/db.json";
 
 
 function toursInfo(props){
+console.log(props.info);
+return (
 
-        props.data.map(data =>{
+        props.info.map(dest =>{
 return (
         <>
+        
+            
+        <h1>info</h1>
+            { 
             <div>
-            <p>{data.id}</p>
-            <p>{data.name}</p>
-            <p>{data.info}</p>
-            <img src={data.image}/>
-            <p>{data.price}</p>
-            </div>
-        </>
+            
+            <p>{dest.name}</p>
+            
+            <img src={dest.image}/>
+            
+            </div> }
+            </>
         )
+       
+        
     })
+   )
 }
 export default toursInfo;
