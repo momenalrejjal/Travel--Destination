@@ -1,28 +1,27 @@
 
-
 function Tours(props) {
-    
+    console.log(props.info);
     return (
-        <div>{
 
-            props.info.map(dest => {
-                return (
+        props.info.map(dest => {
+            return (
+                <>
 
-                    <div>
 
-                        <h1>info</h1>
+                    <h1>info</h1>
+                    {
+                        <div>
 
-                        <h2>{dest.name}</h2>
+                            <p>{dest.name}</p>
 
-                        <img src={dest.image} alt={dest.name} />
+                            <img src={dest.image} />
 
-                    </div>
-
-                     )
-                }
-             )
-        }</div>
-           
+                        </div>}
+                </>
             )
+
+
+        })
+    )
 }
-            export default Tours;
+export default Tours;
