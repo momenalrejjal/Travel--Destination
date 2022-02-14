@@ -1,9 +1,9 @@
-export default headerInfo;
 
-function headerInfo(props){
+function Header(){
 return (
     <>
     <h1>Travel-destination</h1>
     </>
 )
 }
+export default Header;
