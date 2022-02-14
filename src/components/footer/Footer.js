@@ -1,6 +1,5 @@
-export default footerInfo;
 
-function footerInfo(props){
+function Footer(props){
 return (
     <>
     <a href="https://web.facebook.com/?_rdc=1&_rdr">facebook log in </a>
@@ -8,3 +7,4 @@ return (
     </>
 )
 }
+export default Footer;
